@@ -1,0 +1,211 @@
+;M. Bison's stage from Street Fighter Alpha 2, by Phantom.of.the.Server
+
+[Info]
+name = "SFA Shadaloo's VTOL - M.Bison Stage"
+author = "Phantom.of.the.Server"
+versiondate = 2022
+mugenversion = 1.0
+
+[Music]
+bgmusic = sound/SFA Vtol - M.Bison Theme.mp3
+bgmvolume = 100
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -224
+boundright = 224
+boundhigh = 0
+boundlow = 0
+verticalfollow = 0
+floortension = 72
+tension = 60
+overdrawhigh = 0
+overdrawlow = 0
+cuthigh = 44
+cutlow = 16
+startzoom = 1
+zoomout = 1
+zoomin = 1
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1facing = 1
+
+p2startx = 70
+p2starty = 0
+p2facing = -1
+
+p3startx = -115
+p3starty = 0
+p3facing = 1
+
+p4startx = 115
+p4starty = 0
+p4facing = -1
+
+leftbound = -1000
+rightbound = 1000
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset = 216
+autoturn = 1
+resetBG = 0
+localcoord = 320, 240
+xscale = 1
+yscale = 1
+
+[Shadow]
+intensity = 144
+color = 0, 0, 0
+yscale = 0.25
+fade.range = -216, 0
+
+
+;=====<MAIN BG DEFINITION>===== 
+[BGdef]
+spr = sfa-vtol.sff
+debugbg = 0
+
+[BG Sky];480
+type = normal
+spriteno = 0, 2
+layerno = 0
+start = 0, 0
+delta = 0.3571429, 1
+mask = 1
+
+[BG Trees];576
+type = normal
+spriteno = 0, 1
+layerno = 0
+start = 0, 0
+delta = 0.5714286, 1
+mask = 1
+
+[BG Floor]
+type = normal
+spriteno = 0, 0
+layerno = 0
+start = 0, 0
+delta = 1.0, 1
+mask = 1
+
+[BG Engine]
+type = anim
+actionno = 1
+layerno = 0
+start = 0, 0
+delta = 1.0, 1
+
+[BG Rail]
+type = normal
+spriteno = 0, 3
+layerno = 0
+start = 0, 0
+delta = 1.0, 1
+mask = 1
+
+[BG Left Soldier]
+type = anim
+actionno = 3
+layerno = 0
+start = 0, 0
+delta = 1.0, 1
+
+[BG Right Soldier]
+type = anim
+actionno = 4
+layerno = 0
+start = 0, 0
+delta = 1.0, 1
+
+[BG Flare 5];96 (x + 32) / 224
+type = normal
+spriteno = 2,4
+layerno = 0
+start = 0, 0
+delta = 0.5714286, 1
+mask = 1
+ID = 2
+
+[BG Flare 4];120
+type = normal
+spriteno = 2, 3
+layerno = 0
+start = 0, 0
+delta = 0.6785714, 1
+mask = 1
+ID = 2
+
+[BG Flare 3];147
+type = normal
+spriteno = 2, 2
+layerno = 0
+start = 0, 0
+delta = 0.7991071, 1
+mask = 1
+ID = 2
+
+[BG Flare 2];192
+type = normal
+spriteno = 2, 1
+layerno = 0
+start = 0, 0
+delta = 1.0, 1
+mask = 1
+ID = 2
+
+[BG Flare 1];228
+type = normal
+spriteno = 2, 0
+layerno = 0
+start = 0, 0
+delta = 1.1607143, 1
+mask = 1
+ID = 2
+
+
+;=====<BGctrlDEF>===== 
+;---Flare---
+[BGctrldef 2]
+ctrlID = 2
+looptime = 3
+
+[BGctrl 2, On]
+type = enable
+time = 0
+value = 1
+[BGctrl 2, Off]
+type = enable
+time = 1
+value = 0
+
+
+;=====<ANIMATION>===== 
+[Begin Action 1]
+1,0, 0,0, 1
+1,1, 0,0, 1
+1,2, 0,0, 1
+1,3, 0,0, 1
+
+[Begin Action 3]
+3,0, 0,0, 22
+3,1, 0,0, 8
+3,2, 0,0, 8
+3,3, 0,0, 8
+3,4, 0,0, 22
+3,3, 0,0, 8
+3,2, 0,0, 8
+3,1, 0,0, 8
+
+[Begin Action 4]
+4,0, 0,0, 10
+4,1, 0,0, 10
+4,2, 0,0, 32
+4,1, 0,0, 10

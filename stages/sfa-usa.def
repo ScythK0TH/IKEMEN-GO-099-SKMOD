@@ -1,0 +1,189 @@
+;=========================================
+;==      SanFrancisco :: Ken Stage      ==
+;==         Extraído do SFA/CPS1        ==
+;==   dpois eu faço um readme descente! ==
+;== 		by deadfish             ==
+;==      GEM = Grupo de Estudos Mugen   ==
+;=========================================
+
+;=========================================
+;Comentários:
+; Bem, esse eh o meu segundo stage!!
+; (o primeiro tah na hp do GEM, Japanese Market)
+; Ripei usando o kawaks mesmo, ja q nem tinha parallax ;)
+; Foi meio rápido esse bg, mas até q fico bunitu =]
+; Bem, valeu pela galera do GEM, do Forum MgBr!!!!
+; Qquer coisa eh soh avisar:
+; deadf1sh@bol.com.br
+;=========================================
+
+;=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+;:: Qualquer bug, eh soh postar no forum do GEM na MGBR 
+;:: http://forum.mgbr.net
+;:: GEM HP :: http://gem.mgbr.net
+;-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+;:: Caso use algum código do .def ou algum sprite do
+;:: .sff, basta que vc coloque o link do GEM no .txt
+;:: e no .def do seu futuro stage, e me manda um e-mail
+;:: soh p/ eu dar uma olhada mesmo uhuh
+
+
+;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+;///////////////////////////////////////////////////////////////
+
+
+[Info] 
+name = "SFA USA - Ken Stage" 
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -220
+boundright = 220
+boundhigh = 0
+boundlow = 0
+verticalfollow = 0
+tension = 50
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0  
+p1startz = 0  
+p1facing = 1  
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0
+botbound  =  0
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset = 222
+autoturn = 1
+resetBG = 0
+
+[Shadow]
+color = 112,80,64
+yscale = .4
+
+[Music]
+bgmusic = sound/SFA USA - Ken Theme.mp3
+bgvolume = 255
+
+[BGdef]
+spr = sfa-usa.sff
+debugbg = 0
+
+;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+;///////////////////////////////////////////////////////////////
+
+[BG fundo]
+
+
+Type = normal
+spriteno = 0, 0 
+layerno = 0     	
+tart = 0, 4
+delta = .6,.6 
+trans = none  		
+mask = 1  		
+tile  = 1, 0
+tilespacing = 0,0
+window = 0,0, 319, 239 	
+windowdelta = 0,0
+
+[BG meio]
+
+
+Type = normal
+spriteno = 0, 1
+layerno = 0
+start = 0, 22
+delta = 1,1
+mask = 1
+tile  = 0, 0
+tilespacing = 0,0
+window = 0,0, 319, 239
+windowdelta = 0,0
+
+
+
+[BG reggae]
+Type = anim
+layerno = 0
+start = 85, 105
+delta = 1,1
+mask = 1
+
+actionno= 1
+
+[Begin Action 1]
+2,7, 0,0, 10
+2,1, 0,0, 10
+2,2, 0,0, 10
+2,3, 0,0, 10
+2,0, 0,0, 10
+2,4, 0,0, 10
+2,5, 0,0, 10
+2,6, 0,0, 10
+
+
+
+[BG cachorro]
+tile = 0,0
+tilespacing = 1000
+Type = anim
+layerno = 0
+start = 270, 167
+delta = 1,1
+mask = 0
+actionno = 2
+
+[Begin Action 2]
+1,0, 0,0, 12
+1,1, 0,0, 12
+1,2, 0,0, 12
+1,3, 0,0, 12
+1,4, 0,0, 12
+1,5, 0,0, 12
+1,6, 0,0, 12
+1,7, 0,0, 12
+
+
+
+[BG trompete]
+tile = 0,0
+tilespacing = 1000
+Type = anim
+layerno = 0
+start = 297, 100
+delta = 1,1
+mask = 1
+actionno = 3
+
+[Begin Action 3]
+3,0, 0,0, 11
+3,1, 0,0, 11
+3,2, 0,0, 11
+3,3, 0,0, 11
+3,4, 0,0, 11
+3,5, 0,0, 11
+3,6, 0,0, 11
+3,7, 0,0, 11
+

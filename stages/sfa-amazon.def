@@ -1,0 +1,227 @@
+[Info]
+name = "SFA Amazon - Blanka Stage"
+author = "Jo"; Parallax and zoom edit by kenmasters2812
+mugenversion = 1.1
+versiondate = 11,27,2020
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 215
+autoturn = 1
+resetBG = 1
+
+;--------------------------------------------------------
+[Camera]
+	startx = 0
+	starty = 0
+	boundleft = -254
+	boundright = 254
+	boundhigh = -148
+	boundlow = 5
+	overdrawhigh=15
+	overdrawlow=15
+	verticalfollow = .5
+	tension = 00050;
+	tensionhigh=0050;
+	tensionlow=25
+	startzoom=1.0
+	zoomout=0.85;
+	zoomin=1.0
+
+
+;--------------------------------------------------------
+[PlayerInfo]
+	p1startx = -85         
+	p1starty = 0           
+	p1startz = 0         
+	p1facing = 1         
+	p2startx = 85
+	p2starty = 0
+	p2startz = 0
+	p2facing = -1
+
+	leftbound  = -1000 
+	rightbound =  1000 
+	topbound  =  0
+	botbound  =  0 
+
+
+[Scaling]
+	topz     = 0 
+	botz     = 50     
+	topscale = 1      
+	botscale = 1.2    
+
+;--------------------------------------------------------
+[Bound]
+	screenleft = 15 
+	screenright = 15   
+
+;--------------------------------------------------------
+[Shadow]
+	color = 32,32,32
+	yscale = .05
+	reflect = 1
+
+[Music]
+	bgmusic = sound/SFA Amazon - Blanka Theme.mp3
+	bgvolume = 100
+	bgmloopstart = 2970736
+	bgmloopend = 8241382
+
+[BGdef]
+	spr = sfa-amazon.sff
+	debugbg = 0
+
+
+[BG 0, horizon_sky]
+	type = normal
+	mask = 1
+	spriteno = 0,2
+	start = -238,-20
+	scalestart = 1.1,1.1
+	delta = 0.3,0.3
+	zoomdelta = 0.4
+	[BG 0, horizon_trees_water]
+	type = normal
+	mask = 1
+	spriteno = 0,0
+	start = -268,-20
+	scalestart = 1.1,1.1
+	delta = 0.33333333,0.3
+	zoomdelta = 0.4
+
+	[BG 0, horizon_water]
+	type = normal
+	mask = 1
+	spriteno = 0,1
+	start = -200,-20
+	scalestart = 1.1,1.1
+	delta = 0.4,0.4
+	zoomdelta = 0.5
+
+
+[BG 1, house, left]
+	type = normal
+	spriteno = 1,0
+	mask = 1
+	start = -260,8
+	delta = 0.4,0.4
+	zoomdelta = 0.5
+
+	[BG 1, water trees, right]
+	type = normal
+	spriteno = 1,1
+	mask = 1
+	start = -260,-4
+	delta = 0.4,0.4
+	zoomdelta = 0.5
+
+
+[BG 2, Banana tree]
+	type = normal
+	spriteno = 2,0
+	mask = 1
+	start = -247,-4
+	delta = 0.45,0.45
+	zoomdelta = 0.55
+
+	[BG 2, Clothes Line]
+	type = normal
+	spriteno = 2,1
+	mask = 1
+	start = -277,-4
+	delta = 0.475,0.475
+	zoomdelta = 0.55
+
+
+[BG vegetation_main]
+	type = normal
+	spriteno = 3,2
+	start= 0,224
+	scalestart = 0.625,0.65
+	;link 01============
+	delta = 0.7,0.7
+	zoomdelta = 0.7
+	mask = 1
+
+	[BG vegetation_buffer]
+	type = normal
+	spriteno = 3,1
+	start= 40,209
+	scalestart = 1.1,1.15
+	delta = 0.825,0.825
+	zoomdelta = 0.825
+	mask = 1
+
+
+[BG Vines_top]
+	type = normal
+	spriteno = 3,3
+	start= -23,223
+	scalestart = 1.25,1.33
+	delta = 0.8,0.8
+	zoomdelta = 0.8
+	mask = 1
+
+[BG Plants_front]
+	type = normal
+	spriteno = 3,0
+	start= 15,213
+	scalestart = 1.1,1.1
+	delta = 0.95,1
+	mask = 1
+
+[BG floor]
+	type = parallax
+	spriteno = 4,0
+	start= -10,213
+	delta = 0.95,1
+	scalestart = 1,1.19
+	width = 924, 1348
+	yscalestart=100
+	yscaledelta=0.35
+
+
+[BG Snake]
+	type = anim
+	actionno = 5
+	start = 170,8
+	scalestart = 1.27,1.19
+	;link 01============
+	delta = 0.7,0.7
+	zoomdelta = 0.7
+	mask = 1
+
+
+[Begin Action 5]
+5,11,0,0,250
+5,10,0,0,7
+5,9,0,0,7
+5,8,0,0,5
+5,7,0,0,5
+5,6,0,0,4
+5,5,0,0,5
+5,4,0,0,4
+5,0,0,0,200
+5,1,0,0,2
+5,2,0,0,2
+5,1,0,0,2
+5,0,0,0,2
+5,1,0,0,2
+5,0,0,0,1
+5,1,0,0,1
+5,2,0,0,2
+5,3,0,0,1
+5,2,0,0,2
+5,3,0,0,1
+5,2,0,0,2
+5,1,0,0,1
+5,0,0,0,3
+5,4,0,0,7
+5,5,0,0,5
+5,6,0,0,5
+5,7,0,0,4
+5,8,0,0,6
+5,9,0,0,5
+5,10,0,0,6

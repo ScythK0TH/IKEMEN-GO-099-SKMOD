@@ -1,0 +1,376 @@
+;; Street Fighter Alpha 2 - Guy Stage
+
+[Info]
+	name="madgearKM2812"
+	displayname="SFA Madgear Hideout - Guy Stage"
+	versiondate=07,11,2020
+	mugenversion=1.1
+	author = "kenmasters2812"; Originals by Omegaturb0 and NeoGouki
+
+
+[Camera]
+	startx = 0
+	starty = 0
+	boundleft = -243
+	boundright = 243
+	boundhigh = -160
+	boundlow = 10
+	verticalfollow = 1
+	tension	= 50
+	tensionhigh	= 50
+	tensionlow = 25
+	startzoom = 1.00
+	zoomin = 1.00
+	zoomout = 0.85
+
+[PlayerInfo]
+	p1startx = -70
+	p1starty = 0
+	p1startz = 0
+	p1facing = 1
+
+	p2startx = 70
+	p2starty = 0
+	p2startz = 0
+	p2facing = -1
+
+	leftbound  = -1000
+	rightbound =  1000
+	topbound  =  0
+	botbound  =  0
+
+[Scaling]
+	topz = 0
+	botz = 50
+	topscale = 1
+	botscale = 1.2
+
+[Bound]
+	screenleft = 15
+	screenright = 15
+
+[StageInfo]
+	zoffset = 215
+	autoturn = 1
+	resetBG = 0
+
+[Shadow]
+	color = 128,128,128
+	yscale = .1
+	xshear = -0.2
+
+[Music]
+	bgmusic = sound/SFA Madgear - Guy Theme.mp3
+	bgvolume = 255
+	bgmloopstart = 509199
+	bgmloopend = 7340636
+	
+[BGdef]
+	spr = sfa-madgear.sff
+
+[BG 0]
+	type = normal
+	spriteno = 0,1
+	start = 0, -40
+	delta = 0.35, .5
+	;delta = 0.4, .5
+	tile = 1, 0
+	tilespacing = 0, 0
+	velocity = .1, 0
+	trans = add
+
+[BG 0]
+	type = normal
+	spriteno = 0,0
+	start = 0,240
+	delta = 0.55,0.65
+	mask = 1
+
+[BG 1]
+	type = normal
+	spriteno = 100,0
+	start = 0,240
+	delta = 0.650,.8
+	mask = 1
+[BG 1]
+	type = normal
+	spriteno = 100,1
+	start = 0,240; x=352
+	delta = 0.755,.8
+	mask = 1
+
+[BG 3]
+	type = anim
+	actionno = 3
+	start = 0,240
+	delta = .650,.8
+[BG 4]
+	type = anim
+	actionno = 4
+	start = 0,240
+	delta = .650,.8
+
+[BG 5]; madgear dude
+	type = anim
+	actionno = 5
+	start = 0,240
+	delta = .650,.8
+[BG 5]; madgear can
+	type = normal
+	spriteno = 100,3
+	start = -10,246
+	scalestart = 1.1,1.1
+	delta = .685,.8
+	mask = 1
+
+[BG 6]; floor
+	type = parallax
+	spriteno = 6,0
+	start = 0,208
+	delta = .855,.8
+	xscale = .805,1.415
+
+
+[BG 9]; hugo crate
+	type = normal
+	spriteno = 100,2
+	start = 37,244
+	delta = 0.755,.825
+	scalestart = 1.175,1.1 
+	mask = 1
+[BG 9]; hugo
+	type = anim
+	actionno = 7
+	start = -372,244
+	scalestart = 1.1, 1.1
+	delta = 0.755,.825
+
+
+[BG 8];cody and jessica
+	type = anim
+	actionno = 8
+	start = -355,240
+	delta = .775,.825
+
+[BG 9];haggar
+	type = anim
+	actionno = 9
+	start = 352,240
+	delta = 0.755,.825
+
+[BG 10];knife apple guy
+	type = anim
+	actionno = 11
+	start = 761,242
+	delta = .7,.8
+
+[BG 11];poison
+	type = anim
+	actionno = 10
+	start = 505,238
+	delta = 0.755,.8
+	mask = 1
+
+
+[BG 12];mullet guy
+	type = normal
+	spriteno = 12,0
+	start = 413,240
+	delta = .650,.8
+	mask = 1
+
+[BG 13];front junk
+	type = normal
+	spriteno = 13,0
+	layerno = 1
+	tile = 1,0
+	start = 20,263
+	delta = 1.375,1
+	mask = 1
+
+[Begin action 3]
+	3,0, 0,0, 15
+	3,1, 0,0, 8
+	3,2, 0,0, 8
+	3,3, 0,0, 15
+	3,4, 0,0, 8
+	3,5, 0,0, 8
+
+[Begin action 4]
+	4,0, 0,0, 32
+	4,1, 0,0, 8
+	4,2, 0,0, 8
+	4,3, 0,0, 8
+	4,4, 0,0, 80
+	4,3, 0,0, 8
+	4,2, 0,0, 8
+	4,1, 0,0, 16
+	4,2, 0,0, 8
+	4,3, 0,0, 8
+	4,4, 0,0, 80
+	4,3, 0,0, 8
+	4,2, 0,0, 8
+	4,1, 0,0, 16
+
+[Begin action 5]
+	5,0, 0,0, 512
+	5,1, 0,0, 15
+	5,2, 0,0, 15
+	5,3, 0,0, 15
+	5,4, 0,0, 32
+	5,3, 0,0, 15
+	5,2, 0,0, 15
+	5,3, 0,0, 15
+	5,4, 0,0, 32
+	5,3, 0,0, 15
+	5,2, 0,0, 15
+	5,1, 0,0, 15
+
+[Begin action 7]
+	7,0, 0,0, 64
+	7,1, 0,0, 17
+	7,2, 0,0, 12
+	7,3, 0,0, 14
+	7,4, 0,0, 29
+	7,3, 0,0, 12
+	7,2, 0,0, 10
+	7,1, 0,0, 15
+
+[Begin action 8]
+	8,0, 0,0, 19
+	8,1, 0,0, 19
+	8,2, 0,0, 19
+
+[Begin action 9]
+	9,0, 0,0, 13
+	9,1, 0,0, 3
+	9,2, 0,0, 4
+	9,3, 0,0, 5
+	9,4, 0,0, 8
+	9,8, 0,0, 4
+	9,9, 0,0, 4
+	9,0, 0,0, 13
+	9,1, 0,0, 3
+	9,2, 0,0, 4
+	9,3, 0,0, 5
+	9,4, 0,0, 8
+	9,8, 0,0, 4
+	9,9, 0,0, 4
+	9,0, 0,0, 13
+	9,1, 0,0, 4
+	9,2, 0,0, 4
+	9,3, 0,0, 4
+	9,4, 0,0, 7
+	9,5, 0,0, 8
+	9,6, 0,0, 7
+	9,7, 0,0, 4
+	9,8, 0,0, 3
+	9,9, 0,0, 5
+	9,0, 0,0, 13
+	9,1, 0,0, 3
+	9,2, 0,0, 4
+	9,3, 0,0, 5
+	9,4, 0,0, 8
+	9,8, 0,0, 4
+	9,9, 0,0, 4
+	9,0, 0,0, 13
+	9,1, 0,0, 3
+	9,2, 0,0, 4
+	9,3, 0,0, 5
+	9,4, 0,0, 8
+	9,8, 0,0, 4
+	9,9, 0,0, 4
+	9,0, 0,0, 13
+	9,1, 0,0, 4
+	9,2, 0,0, 4
+	9,3, 0,0, 4
+	9,4, 0,0, 7
+	9,5, 0,0, 8
+	9,6, 0,0, 7
+	9,7, 0,0, 4
+	9,8, 0,0, 3
+	9,9, 0,0, 5
+	9,0, 0,0, 13
+	9,1, 0,0, 4
+	9,2, 0,0, 4
+	9,3, 0,0, 4
+	9,4, 0,0, 7
+	9,5, 0,0, 8
+	9,6, 0,0, 7
+	9,7, 0,0, 4
+	9,8, 0,0, 3
+	9,9, 0,0, 5
+	9,0, 0,0, 13
+	9,1, 0,0, 4
+	9,2, 0,0, 4
+	9,3, 0,0, 4
+	9,4, 0,0, 7
+	9,5, 0,0, 8
+	9,6, 0,0, 7
+	9,7, 0,0, 4
+	9,8, 0,0, 3
+	9,9, 0,0, 5
+	9,0, 0,0, 13
+	9,1, 0,0, 3
+	9,2, 0,0, 4
+	9,3, 0,0, 5
+	9,4, 0,0, 8
+	9,8, 0,0, 4
+	9,9, 0,0, 4
+	9,0, 0,0, 13
+	9,1, 0,0, 4
+	9,2, 0,0, 4
+	9,3, 0,0, 4
+	9,4, 0,0, 7
+	9,5, 0,0, 8
+	9,6, 0,0, 7
+	9,7, 0,0, 4
+	9,8, 0,0, 3
+	9,9, 0,0, 5
+
+[Begin action 10]
+	10,0, 0,0, 10
+	10,1, 0,0, 10
+	10,2, 0,0, 10
+	10,3, 0,0, 10
+	10,0, 0,0, 10
+	10,1, 0,0, 10
+	10,2, 0,0, 10
+	10,3, 0,0, 10
+	10,0, 0,0, 10
+	10,1, 0,0, 10
+	10,2, 0,0, 10
+	10,3, 0,0, 10
+
+	10,0, 0,0, 10
+	10,1, 0,0, 10
+	10,2, 0,0, 10
+	10,3, 0,0, 10
+	10,0, 0,0, 10
+	10,1, 0,0, 10
+	10,2, 0,0, 10
+	10,3, 0,0, 10
+	10,0, 0,0, 10
+	10,1, 0,0, 10
+	10,2, 0,0, 10
+	10,3, 0,0, 10
+
+	10,0, 0,0, 10
+	10,1, 0,0, 10
+	10,2, 0,0, 10
+	10,3, 0,0, 10
+	10,0, 0,0, 10
+	10,1, 0,0, 10
+	10,2, 0,0, 10
+	10,3, 0,0, 10
+	10,0, 0,0, 10
+	10,1, 0,0, 10
+	10,2, 0,0, 10
+	10,3, 0,0, 10
+
+
+[Begin action 11]
+	11,0, 0,0, 19
+	11,1, 0,0, 19
+	11,2, 0,0, 19
+	11,3, 0,0, 19

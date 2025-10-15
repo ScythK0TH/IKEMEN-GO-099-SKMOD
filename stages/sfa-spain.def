@@ -1,0 +1,403 @@
+[Info]
+name = "SFA Le Piege de Vega - Vega Stage"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -224
+boundright = 224
+boundhigh = 0
+boundlow = 0
+verticalfollow = .2
+floortension = 0
+tension = 60
+
+[PlayerInfo]
+p1startx = -85
+p1starty = 0
+p1startz = 0
+p1facing = 1
+p2startx = 85
+p2starty = 0
+p2startz = 0
+p2facing = -1
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0
+botbound  =  0     
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 15    
+screenright = 15
+
+[StageInfo]
+zoffset = 216
+zoffsetlink = 5
+autoturn = 1
+resetBG = 0
+
+[Shadow]
+intensity = 180
+color = 0,0,0
+yscale = 0.2
+fade.range = -400,-100
+
+[Music]
+bgmusic = sound/SFA Spain - Vega Theme.mp3
+bgvolume = 10
+
+[BGdef]
+spr = sfa-spain.sff
+debugbg = 0
+
+[BG 0]
+type = normal
+spriteno = 0,0
+id = 1
+start = -256,0
+delta = 0.42857,1
+
+
+[BG 1]
+type = normal
+spriteno = 1,0
+id = 2
+start = -320,0
+delta = 0.71428,1
+mask = 1
+
+[BG 3]
+type = parallax
+spriteno = 3,0
+id = 4
+start = 0,208
+delta = 0.83928,1
+xscale = 1,1.680862508
+
+
+[BG 2]
+type = normal
+spriteno = 2,0
+id= 3
+start = -356,-224
+delta = 0.875,1	;0.7324428,1
+mask = 1
+
+[BG 4]
+type = dummy
+start = 0, 0
+id = 5
+
+;------------------------------------------------------------------------------------
+
+[BgCtrlDef 1]
+looptime = -1
+CtrlID = 3
+
+[BGCtrl 1.0]
+type = PosSet
+time = 0
+y = 70
+
+[BGCtrl 1.1]
+type = VelSet
+time = 10
+y = 7
+
+[BGCtrl 1.2]
+type = VelSet
+time = 32
+y = 0
+
+
+;------------------------------------------------------------------------------------
+
+[BGCtrlDef 2]
+looptime = -1
+CtrlID = 1, 2, 3, 4, 5
+
+[BGCtrl 2.10]
+type = PosAdd
+time = 33
+y = -10
+
+[BGCtrl 2.11]
+type = PosAdd
+time = 34
+y = 10
+
+[BGCtrl 2.10]
+type = PosAdd
+time = 35
+y = -10
+
+[BGCtrl 2.11]
+type = PosAdd
+time = 36
+y = 10
+
+[BGCtrl 2.10]
+type = PosAdd
+time = 37
+y = -10
+
+[BGCtrl 2.11]
+type = PosAdd
+time = 38
+y = 10
+
+[BGCtrl 2.10]
+type = PosAdd
+time = 39
+y = -10
+
+[BGCtrl 2.11]
+type = PosAdd
+time = 40
+y = 10
+
+[BGCtrl 2.10]
+type = PosAdd
+time = 41
+y = -10
+
+[BGCtrl 2.11]
+type = PosAdd
+time = 42
+y = 10
+
+[BGCtrl 2.10]
+type = PosAdd
+time = 43
+y = -10
+
+[BGCtrl 2.11]
+type = PosAdd
+time = 44
+y = 10
+
+[BGCtrl 2.10]
+type = PosAdd
+time = 45
+y = -10
+
+[BGCtrl 2.11]
+type = PosAdd
+time = 46
+y = 10
+
+[BGCtrl 2.10]
+type = PosAdd
+time = 47
+y = -10
+
+[BGCtrl 2.11]
+type = PosAdd
+time = 48
+y = 10
+
+[BGCtrl 2.10]
+type = PosAdd
+time = 49
+y = -10
+
+[BGCtrl 2.11]
+type = PosAdd
+time = 50
+y = 10
+
+[BGCtrl 2.10]
+type = PosAdd
+time = 51
+y = -10
+
+[BGCtrl 2.11]
+type = PosAdd
+time = 52
+y = 10
+
+[BGCtrl 2.12]
+type = PosAdd
+time = 54
+y = -9
+
+[BGCtrl 2.13]
+type = PosAdd
+time = 55
+y = 9
+
+[BGCtrl 2.12]
+type = PosAdd
+time = 56
+y = -9
+
+[BGCtrl 2.13]
+type = PosAdd
+time = 57
+y = 9
+
+[BGCtrl 2.14]
+type = PosAdd
+time = 58
+y = -8
+
+[BGCtrl 2.15]
+type = PosAdd
+time = 59
+y = 8
+
+[BGCtrl 2.14]
+type = PosAdd
+time = 60
+y = -8
+
+[BGCtrl 2.15]
+type = PosAdd
+time = 61
+y = 8
+
+[BGCtrl 2.16]
+type = PosAdd
+time = 62
+y = -7
+
+[BGCtrl 2.17]
+type = PosAdd
+time = 63
+y = 7
+
+[BGCtrl 2.16]
+type = PosAdd
+time = 64
+y = -7
+
+[BGCtrl 2.17]
+type = PosAdd
+time = 65
+y = 7
+
+[BGCtrl 2.18]
+type = PosAdd
+time = 66
+y = -6
+
+[BGCtrl 2.19]
+type = PosAdd
+time = 67
+y = 6
+
+[BGCtrl 2.18]
+type = PosAdd
+time = 68
+y = -6
+
+[BGCtrl 2.19]
+type = PosAdd
+time = 69
+y = 6
+
+[BGCtrl 2.20]
+type = PosAdd
+time = 70
+y = -5
+
+[BGCtrl 2.21]
+type = PosAdd
+time = 71
+y = 5
+
+[BGCtrl 2.20]
+type = PosAdd
+time = 72
+y = -5
+
+[BGCtrl 2.21]
+type = PosAdd
+time = 73
+y = 5
+
+[BGCtrl 2.22]
+type = PosAdd
+time = 74
+y = -4
+
+[BGCtrl 2.23]
+type = PosAdd
+time = 75
+y = 4
+
+[BGCtrl 2.22]
+type = PosAdd
+time = 76
+y = -4
+
+[BGCtrl 2.23]
+type = PosAdd
+time = 77
+y = 4
+
+[BGCtrl 2.24]
+type = PosAdd
+time = 78
+y = -3
+
+[BGCtrl 2.25]
+type = PosAdd
+time = 79
+y = 3
+
+[BGCtrl 2.24]
+type = PosAdd
+time = 80
+y = -3
+
+[BGCtrl 2.25]
+type = PosAdd
+time = 81
+y = 3
+
+[BGCtrl 2.26]
+type = PosAdd
+time = 82
+y = -2
+
+[BGCtrl 2.27]
+type = PosAdd
+time = 83
+y = 2
+
+[BGCtrl 2.26]
+type = PosAdd
+time = 84
+y = -2
+
+[BGCtrl 2.27]
+type = PosAdd
+time = 85
+y = 2
+
+[BGCtrl 2.28]
+type = PosAdd
+time = 86
+y = -1
+
+[BGCtrl 2.29]
+type = PosAdd
+time = 87
+y = 1
+
+[BGCtrl 2.28]
+type = PosAdd
+time = 88
+y = -1
+
+[BGCtrl 2.29]
+type = PosAdd
+time = 89
+y = 1

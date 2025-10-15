@@ -1,0 +1,254 @@
+[Info]
+name = "SFA Jamaica MontegoBay club - Deejay Stage"
+creator = "0megaturb0"
+editor = "AuMiO VXC"
+
+;--------------------------------------------------------
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -100
+boundright = 100
+boundhigh = -150
+boundlow = -10
+verticalfollow = 1.5
+floortension = 125
+tension = 125
+tensionhigh = 100
+tensionlow = 20
+startzoom=1.05
+zoomin=1.1
+zoomout=.65
+;--------------------------------------------------------
+[PlayerInfo]
+p1startx = -80
+p1starty = 0
+p1startz = 0
+p1facing = 1
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+leftbound  = -1000
+rightbound = 1000
+topbound = 0
+botbound = 0
+
+;--------------------------------------------------------
+[Scaling]
+topz     = 0       
+botz     = 50      
+topscale = 1       
+botscale = 1.2     
+
+;--------------------------------------------------------
+[Bound]
+screenleft = 25
+screenright = 25
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 221
+autoturn = 1
+resetBG = 0
+
+;--------------------------------------------------------
+[Shadow]
+color = 
+yscale = 0.15
+reflect = 0
+
+;--------------------------------------------------------
+[Music]
+bgmusic = sound/SFA Jamaica - Deejay Theme.mp3
+bgvolume = 255
+
+;--------------------------------------------------------
+[BGdef]
+spr = sfa-jamaica.sff
+debugbg = 0
+
+;--------------------------------------------------------
+;--------------------------------------------------------
+
+
+
+[BG stars]
+type = normal 
+spriteno = 0, 2
+start = 200, 200
+delta = .3, .3
+tile = 1, 1
+tilespacing = 0, 0
+
+[BG 0]
+type = normal 
+spriteno = 0, 0
+start = 0, 0
+delta = .4, .4
+trans=add
+
+[BG stars]
+type = normal 
+spriteno = 0, 2
+start = 0, 0
+delta = .4, .4
+tile = 1, 1
+tilespacing = 0, 0
+mask=1
+trans=add
+
+
+[BG beach]
+type = normal
+spriteno = 3,1
+start = 0, 5
+delta = .5, .6
+mask = 1
+
+[BG beachhouse]
+type = normal
+spriteno = 3,0
+start = 0, 5
+delta = .6, .8
+mask = 1
+
+[BG sky]
+type  = normal
+spriteno = 0, 1
+start = 0, 0
+delta = .7, .8
+tile = 1, 1
+tilespacing = 0, 0
+velocity = .25, 0
+mask = 0
+trans = add
+
+[BG 2]
+type = normal 
+spriteno = 2, 0
+start = 0, 5
+delta = .8, .8
+mask = 1
+
+[BG sign]
+type = anim
+actionno = 4
+start = 0, 5
+delta = .9, .8
+
+[Begin Action 4]
+4,0, 0,0, 9
+4,1, 0,0, 9
+4,2, 0,0, 9
+4,3, 0,0, 9
+4,4, 0,0, 9
+
+
+[BG car]
+type = normal
+spriteno = 5,0
+start = 0, 5
+delta = 1, .8
+mask = 1
+
+[BG dude]
+type = anim
+actionno = 6
+start = 0, 5
+delta = 1, .8
+
+[Begin Action 6]
+6,0, 0,0, 8
+6,1, 0,0, 8
+6,0, 0,0, 8
+6,1, 0,0, 8
+6,0, 0,0, 8
+6,1, 0,0, 8
+6,0, 0,0, 8
+6,1, 0,0, 8
+6,2, 0,0, 7
+6,2, 0,0, 7
+6,2, 0,0, 7
+6,2, 0,0, 7
+6,2, 0,0, 7
+6,2, 0,0, 7
+6,2, 0,0, 7
+6,2, 0,0, 7
+6,2, 0,0, 6
+6,1, 0,0, 6
+6,0, 0,0, 6
+6,1, 0,0, 6
+6,2, 0,0, 6
+6,1, 0,0, 6
+6,0, 0,0, 6
+6,1, 0,0, 6
+6,2, 0,0, 6
+6,2, 0,0, 7
+6,2, 0,0, 7
+6,2, 0,0, 7
+6,2, 0,0, 7
+6,2, 0,0, 7
+6,2, 0,0, 7
+6,2, 0,0, 7
+6,2, 0,0, 7
+6,2, 0,0, 7
+6,2, 0,0, 7
+6,2, 0,0, 7
+
+[BG girl]
+type = anim
+actionno = 7
+start = 0, 5
+delta = 1, .8
+
+[Begin Action 7]
+7,0, 0,0, 8
+7,1, 0,0, 8
+7,2, 0,0, 8
+7,3, 0,0, 8
+7,4, 0,0, 8
+7,3, 0,0, 8
+7,2, 0,0, 8
+7,1, 0,0, 8
+
+[BG club]
+type = anim
+actionno = 8
+start = 0, 5
+delta = 1, .8
+
+[Begin Action 8]
+8,0, 0,0, 8
+8,1, 0,0, 8
+8,2, 0,0, 8
+8,3, 0,0, 8
+
+[BG lights]
+type = anim
+actionno = 10
+start = 0, 5
+delta = 1, .8
+
+[Begin Action 10]
+10,0, 0,0, 8
+10,1, 0,0, 8
+10,2, 0,0, 8
+10,3, 0,0, 8
+10,4, 0,0, 8
+10,5, 0,0, 8
+10,6, 0,0, 8
+10,7, 0,0, 8
+
+[BG girls]
+type = anim
+actionno = 11
+start = -250, 185
+delta = 1, .8
+
+[Begin Action 11]
+0,3, 0,0, 60
+0,4, 0,0, 60
+
+

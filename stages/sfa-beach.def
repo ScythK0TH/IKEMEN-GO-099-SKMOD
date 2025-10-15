@@ -1,0 +1,165 @@
+[Info]
+name = "SFA Fight On The beach - R.Mika Stage"
+
+;--------------------------------------------------------
+[Camera]
+startx = 0
+starty = 0
+boundleft = -224
+boundright = 224
+boundhigh = -0
+boundlow = 0
+verticalfollow = .2
+floortension = 0
+tension = 60
+
+
+;--------------------------------------------------------
+[PlayerInfo]
+p1startx = -85         
+p1starty = 0           
+p1startz = 0         
+p1facing = 1         
+p2startx = 85
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000 
+rightbound =  1000 
+topbound  =  0
+botbound  =  0 
+
+
+[Scaling]
+topz     = 0 
+botz     = 50     
+topscale = 1      
+botscale = 1.2    
+
+;--------------------------------------------------------
+[Bound]
+screenleft = 15 
+screenright = 15   
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 216
+autoturn = 1
+resetBG = 1
+
+;--------------------------------------------------------
+[Shadow]
+color = 32,32,32
+yscale = -.05
+reflect = 1
+
+[Music]
+bgmusic = sound/SFA Beach - R.Mika Theme.mp3
+bgvolume = 255
+
+[BGdef]
+spr = sfa-beach.sff
+debugbg = 1
+
+[BG 0]
+type= normal
+spriteno = 0,0
+start = -306,0
+delta = 0.65625,1
+mask = 1
+
+[BG 1]
+type = normal
+spriteno = 1,0
+start = -267,0
+delta = 0.74107 ,1
+mask = 1
+
+[BG 5]
+type = anim
+actionno = 5
+start = 12,152
+delta = 0.74107 ,1
+
+[BG 2]
+type = normal
+spriteno = 2,0
+start = -346,0
+delta = 0.828125 ,1
+mask = 1
+
+[BG 3]
+type = anim
+actionno = 3
+start = -160,137
+delta = 0.828125 ,1
+mask = 1
+
+[BG 4]
+type = parallax
+spriteno = 4,0
+start = 0,208
+delta = 0.80803,1
+xscale = 1,1.7929
+
+[BG 6]
+type = anim
+actionno = 6
+start = -345,131
+delta = 0.828125 ,1
+
+[BG 7]
+type = anim
+actionno = 7
+start = 223,135
+delta = 0.828125 ,1
+
+[BG 8]
+type = normal
+spriteno = 8,0
+start = -345,158
+delta = 0.828125,1
+mask = 1
+
+[BG 9]
+type = normal
+spriteno = 9,0
+start = 155,164
+delta = 0.828125,1
+mask = 1
+
+[Begin Action 3]
+3,1,0,0,25
+3,2,0,0,16
+3,0,0,0,24
+3,2,0,0,47
+
+[Begin Action 5]
+5,1,0,0,7
+5,4,0,0,8
+5,3,0,0,7
+5,2,0,0,8
+5,1,0,0,7
+5,0,0,0,8
+
+[Begin Action 6]
+6,5,0,0,22
+6,4,0,0,13
+6,3,0,0,11
+6,2,0,0,10
+6,1,0,0,9
+6,0,0,0,22
+6,1,0,0,13
+6,2,0,0,10
+6,3,0,0,10
+6,4,0,0,12
+
+[Begin Action 7]
+7,5,0,0,5
+7,6,0,0,6
+7,0,0,0,5
+7,1,0,0,5
+7,2,0,0,5
+7,3,0,0,5
+7,4,0,0,5

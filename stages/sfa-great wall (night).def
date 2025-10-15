@@ -1,0 +1,143 @@
+[Info]
+name = "SFA Great Wall (Night) - Chun-Li Stage"
+; From the CPS2 game Street Fighter Alpha.
+; Converted for Mugen versions 2001.11.01 and up by Winane.
+; (Also mostly compatible with Mugen version 04.14.2001.)
+; Site:  http://www.mugenguild.net/~winane/
+;
+; Feel free to do whatever the heck you want with this stage,
+; just so long as it doesn't piss off Capcom too much.
+; But if you choose to put this stage on your site, please
+; make sure your site always has the most recent version.
+
+; By default, this stage has the same width and height as the original version.  But if you want
+; to make it wider, you can set boundleft and boundright as high as -243 and 243 respectively.
+; And you can raise boundhigh as high as you want.  But if you want to raise it by more than 40,
+; be sure to remove the semicolon in front of the "tile = 0,8" line below.
+
+; Credit and thanks to:
+;  Capcom, of course, to whom most of the credit for this stage should go.
+;  Elecbyte, of course, for Mugen, Sprmaker, and their documentation.
+;  Razoola/CPS-2 Shock, for decrypting all those ROMs.
+;  ElSemi, for Nebula.
+;  Irfan Skiljan for IrfanView, Microsoft for Paint, and Jasc Software for Paint Shop Pro.
+;  Valodim and Shin ShadowH, for the web space.
+;  Dark Saviour, for providing the music from the PSX version of SFA.
+
+;versiondate = 04,16,2006
+
+;--------------------------------------------------------
+[Camera]
+
+startx = 0
+starty = 0
+
+boundleft = -224;-243
+boundright = 224;243
+boundhigh = 0;-16
+boundlow = 0
+
+verticalfollow = .2
+floortension = 0
+tension = 70
+
+;--------------------------------------------------------
+[PlayerInfo]
+
+p1startx = -81
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+ ;Don't change these values, or else.
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0
+botbound  =  0
+
+;--------------------------------------------------------
+[Scaling]
+
+topz = 0
+botz = 50
+topscale = 1
+botscale = 1.2
+
+;--------------------------------------------------------
+[Bound]
+
+; For compliance with semiofficial MUGEN standard:
+screenleft = 15
+screenright = 15
+; In the original game, these values vary from character to character.
+; If you want to set them accurately for Chun-Li, based on pixel count, set both values to 24.
+; If you want to set them accurately for Chun-Li, based on proportionality, set both values to 20.
+
+;--------------------------------------------------------
+[StageInfo]
+
+zoffset = 216
+autoturn = 1
+resetBG = 1
+
+;--------------------------------------------------------
+[Shadow]
+
+;intensity = 0
+;color = 92,92,92
+yscale = -.1
+fade.range = -256,-64
+
+;--------------------------------------------------------
+[Music]
+
+;bgmusic = sound/SFA Great Wall - Chin-Li Theme.mp3
+bgmusic = sound/SFA Great Wall - Chin-Li Theme.mp3
+;bgmusic = sound/SFA Great Wall - Chin-Li Theme.mp3
+bgvolume = 255
+
+;========================================================
+
+[BGdef]
+
+spr = sfa-great wall (night).sff
+debugbg = 0
+
+;----------
+
+[BG Sky]
+type = normal
+spriteno = 0,0
+start = 0,0
+delta = 0,0
+;tile = 0,8 ; Enable this if you want to raise boundhigh by more than 40
+
+[BG Back]
+type = normal
+spriteno = 0,1
+start = 0,10
+delta = .5714285,.5
+
+[BG Main]
+type = normal
+spriteno = 1,0
+start = 0,62
+delta = .921875,1
+mask = 1
+
+[BG Ground]
+type = parallax
+spriteno = 1,1
+start = 0,208
+delta = .9127,1 ;.921875,1
+xscale = 1,1.341 ;1,1.3292978
+
+[BG Line]; I'm not a perfectionist. :)
+type = normal
+spriteno = 1,2
+start = 0,216

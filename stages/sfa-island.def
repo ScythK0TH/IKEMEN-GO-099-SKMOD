@@ -1,0 +1,173 @@
+;Mikonos Island, Cammy's stage from Street Fighter Alpha 3, by Phantom.of.the.Server
+
+[Info]
+name = "SFA Mikonos Island - Cammy Stage"
+author = "Phantom.of.the.Server"
+versiondate = 2022
+mugenversion = 1.0
+
+[Music]
+bgmusic = sound/SFA Island - Cammy Theme.mp3
+bgmvolume = 100
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -224
+boundright = 224
+boundhigh = 0
+boundlow = 0
+verticalfollow = 0
+floortension = 72
+tension = 60
+overdrawhigh = 0
+overdrawlow = 0
+cuthigh = 44
+cutlow = 16
+startzoom = 1
+zoomout = 1
+zoomin = 1
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1facing = 1
+
+p2startx = 70
+p2starty = 0
+p2facing = -1
+
+p3startx = -115
+p3starty = 0
+p3facing = 1
+
+p4startx = 115
+p4starty = 0
+p4facing = -1
+
+leftbound = -1000
+rightbound = 1000
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset = 216
+autoturn = 1
+resetBG = 0
+localcoord = 320, 240
+xscale = 1
+yscale = 1
+
+[Shadow]
+intensity = 128
+color = 0, 0, 0
+yscale = 0.25
+fade.range = -216, 0
+
+
+;=====<MAIN BG DEFINITION>===== 
+[BGdef]
+spr = sfa-island.sff
+debugbg = 0
+
+[BG Sky]
+type = normal
+spriteno = 0, 2
+layerno = 0
+start = 0, 0
+delta = 0.3571426, 1
+mask = 1
+
+[BG Water]
+type = anim
+actionno = 4
+layerno = 0
+start = 0, 0
+delta = 0.3571426, 1
+
+[BG Mid]
+type = normal
+spriteno = 0, 1
+layerno = 0
+start = 0, 0
+delta = 0.5714286, 1
+mask = 1
+
+[BG Windmill]
+type = anim
+actionno = 1
+layerno = 0
+start = 0, 0
+delta = 1, 1
+
+[BG Floor]
+type = normal
+spriteno = 0, 0
+layerno = 0
+start = 0, 0
+delta = 1, 1
+mask = 1
+
+[BG Cloth]
+type = anim
+actionno = 3
+layerno = 0
+start = 0, 0
+delta = 1, 1
+
+[BG Clothesline]
+type = anim
+actionno = 2
+layerno = 0
+start = 0, 0
+delta = 1, 1
+
+[BG Flowers]
+type = normal
+spriteno = 0, 3
+layerno = 0
+start = 0, 0
+delta = 1, 1
+mask = 1
+
+
+;=====<ANIMATION>===== 
+[Begin Action 1]
+1,0, 0,0, 12
+1,1, 0,0, 12
+1,2, 0,0, 12
+1,3, 0,0, 12
+1,4, 0,0, 12
+1,5, 0,0, 12
+1,6, 0,0, 12
+1,7, 0,0, 12
+
+[Begin Action 2]
+2,0, 0,0, 3
+2,1, 0,0, 3
+2,2, 0,0, 3
+2,3, 0,0, 3
+
+[Begin Action 3]
+3,0, 0,0, 3
+3,1, 0,0, 2
+3,2, 0,0, 2
+3,0, 0,0, 2
+3,1, 0,0, 3
+3,2, 0,0, 2
+3,0, 0,0, 2
+3,1, 0,0, 2
+3,2, 0,0, 3
+3,0, 0,0, 2
+3,1, 0,0, 2
+3,2, 0,0, 2
+
+[Begin Action 4]
+4,0, 0,0, 6
+4,1, 0,0, 6
+4,2, 0,0, 6
+4,3, 0,0, 6
+4,4, 0,0, 6
+4,5, 0,0, 6

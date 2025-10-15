@@ -1,0 +1,485 @@
+[Info]
+name = "SFZ2_Metro"
+displayname = "SFA Metro City skyline - Rolento Stage"
+author = "NeoGouki"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -152 ;-224
+boundright = 151 ;224
+boundhigh = -16
+boundlow = 0
+verticalfollow = .25
+tension = 50
+floortension = 40
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0
+botbound  =  0
+
+[Scaling]
+topz = 0
+botz = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset = 215
+autoturn = 1
+resetBG = 1
+xscale =  .833333333333333333333333333333
+
+[Shadow]
+color = 9,9,4
+yscale = .1
+
+[Music]
+bgmusic = sound/SFA Skyline - Rolento Theme.mp3
+bgvolume = 0
+
+[BGdef]
+spr = sfa-skyline.sff
+debugbg = 0
+
+[BG 0]
+type = anim
+actionno = 0
+ID = 1
+start = 0,-266;3
+delta = .183,.183 ;.29,1
+
+[BG 1.0]
+type = normal
+spriteno = 1,0
+ID = 2
+start = 0,-272
+delta = .186,.186
+tile = 0,3
+
+[BG 1.1]
+type = normal
+spriteno = 1,1
+ID = 2
+start = 0,-528
+delta = .186,.186
+
+[BG 2]
+type = normal
+spriteno = 2,0
+ID = 3
+start = 0,-1536
+delta = .365,.366 ;.435,1
+tile = 0,2
+tilespacing = 0,1536
+
+[BG 3.0]
+type = normal
+spriteno = 3,0
+ID = 3
+start = 0,-1024
+delta = .366,.366
+tile = 0,5
+mask = 1
+
+[BG 3.1]
+type = normal
+spriteno = 3,1
+ID = 3
+start = 0,-1280
+delta = .366,.366
+mask = 1
+
+[BG 4.0]
+type = normal
+spriteno = 4,0
+ID = 3
+start = 0,-512
+delta = .366,.366
+tile = 0,3
+tilespacing = 0,220
+mask = 1
+
+[BG 4.1]
+type = normal
+spriteno = 4,1
+ID = 3
+start = 0,-768
+delta = .366,.366
+tile = 0,2
+tilespacing = 0,474
+mask = 1
+
+[BG 4.2]
+type = normal
+spriteno = 4,2
+ID = 3
+start = 0,-1280
+delta = .366,.366
+mask = 1
+
+[BG 5]
+type = anim
+actionno = 5
+ID = 3
+start = 0,-1280
+delta = .366,.366
+
+[BG 6.0]
+type = normal
+spriteno = 6,0
+ID = 4
+start = -326,240
+delta = .735,1
+tile = 0,1
+tilespacing = 0,414
+mask = 1
+
+[BG 6.1]
+type = normal
+spriteno = 6,1
+ID = 4
+start = 326,240
+delta = .735,1
+tile = 0,1
+tilespacing = 0,414
+mask = 1
+
+[BG 7]
+type = normal
+spriteno = 7,0
+ID = 4
+start = 0,240
+delta = .735,1
+tile = 0,1
+tilespacing = 0,496
+mask = 1
+
+[BG 8.0]
+type = normal
+spriteno = 8,0
+ID = 4
+start = -327,240
+delta = .735,1
+tile = 0,1
+mask = 1
+
+[BG 8.1]
+type = normal
+spriteno = 8,1
+ID = 4
+start = 326,240
+delta = .735,1
+tile = 0,1
+mask = 1
+
+[BG 9]
+type = anim
+actionno = 9
+ID = 5
+start = 0,240
+delta = .735,1
+
+[BG 11]
+type = anim
+actionno = 11
+ID = 6
+start = 0,240
+delta = .735,1
+
+[BG 15]
+type = anim
+actionno = 15
+ID = 7
+start = 0,240
+delta = .735,1
+
+[BG 19]
+type = parallax
+spriteno = 19,0
+start = 0,193
+delta = .735,1
+xscale = .735,1.24
+mask = 1
+
+[Begin action 0]
+
+0,0, 0,0, 4
+0,1, 0,0, 4
+0,2, 0,0, 4
+0,3, 0,0, 4
+0,4, 0,0, 4
+0,5, 0,0, 4
+
+[Begin action 5]
+
+5,0, 0,0, 2190
+5,1, 0,0, 7
+5,2, 0,0, 4
+5,3, 0,0, 4
+5,4, 0,0, 115
+5,3, 0,0, 13
+5,2, 0,0, 31
+5,1, 0,0, 13
+
+[Begin action 9]
+
+9,0, 0,0, 8
+9,1, 0,0, 8
+
+[Begin action 10]
+
+9,0, 0,0, -1
+
+[Begin action 11]
+
+11,0, 0,0, 8
+11,1, 0,0, 8
+11,2, 0,0, 8
+11,3, 0,0, 8
+11,4, 0,0, 8
+11,5, 0,0, 8
+11,6, 0,0, 8
+11,7, 0,0, 8
+
+[Begin action 12]
+
+11,4, 0,0, -1
+
+[Begin action 13]
+
+11,4, 0,0, 8
+11,5, 0,0, 8
+11,6, 0,0, 8
+11,7, 0,0, 8
+11,0, 0,0, 8
+11,1, 0,0, 8
+11,2, 0,0, 8
+11,3, 0,0, 8
+
+[Begin action 14]
+
+11,3, 0,0, -1
+
+[Begin action 15]
+
+15,0, 0,0, 8
+15,1, 0,0, 8
+15,2, 0,0, 8
+15,3, 0,0, 8
+15,4, 0,0, 8
+15,5, 0,0, 8
+15,6, 0,0, 8
+15,7, 0,0, 8
+
+[Begin action 16]
+
+15,4, 0,0, -1
+
+[Begin action 17]
+
+15,4, 0,0, 8
+15,5, 0,0, 8
+15,6, 0,0, 8
+15,7, 0,0, 8
+15,0, 0,0, 8
+15,1, 0,0, 8
+15,2, 0,0, 8
+15,3, 0,0, 8
+
+[Begin action 18]
+
+15,3, 0,0, -1
+
+[BGCtrldef 1]
+CtrlID = 1
+
+[BGCtrl 1.1]
+type = VelSet
+time = 0
+x = 0
+y = .167
+
+[BGCtrl 1.2]
+type = VelSet
+time = 2727
+x = 0
+y = 0
+
+[BGCtrl 1.3]
+type = VelSet
+time = 2967
+x = 0
+y = .167
+
+[BGCtrl 1.4]
+type = VelSet
+time = 3350
+x = 0
+y = 0
+
+[BGCtrldef 2]
+CtrlID = 2
+
+[BGCtrl 2.1]
+type = VelSet
+time = 0
+x = 0
+y = .341
+
+[BGCtrl 2.2]
+type = VelSet
+time = 2727
+x = 0
+y = 0
+
+[BGCtrl 2.3]
+type = VelSet
+time = 2967
+x = 0
+y = .329
+
+[BGCtrl 2.4]
+type = VelSet
+time = 3350
+x = 0
+y = 0
+
+[BGCtrldef 3]
+CtrlID = 3
+
+[BGCtrl 3.1]
+type = VelSet
+time = 0
+x = 0
+y = .657
+
+[BGCtrl 3.2]
+type = VelSet
+time = 2727
+x = 0
+y = 0
+
+[BGCtrl 3.3]
+type = VelSet
+time = 2967
+x = 0
+y = .657
+
+[BGCtrl 3.4]
+type = VelSet
+time = 3350
+x = 0
+y = 0
+
+[BGCtrldef 4]
+CtrlID = 4
+
+[BGCtrl 4.1]
+type = VelSet
+time = 0
+x = 0
+y = 1
+
+[BGCtrl 4.2]
+type = VelSet
+time = 2727
+x = 0
+y = 0
+
+[BGCtrl 4.3]
+type = VelSet
+time = 2967
+x = 0
+y = 1
+
+[BGCtrl 4.4]
+type = VelSet
+time = 3350
+x = 0
+y = 0
+
+[BGCtrldef 5]
+CtrlID = 5
+
+[BGCtrl 5.1]
+type = anim
+time = 0
+value = 9
+
+[BGCtrl 5.2]
+type = anim
+time = 2727
+value = 10
+
+[BGCtrl 5.3]
+type = anim
+time = 2967
+value = 9
+
+[BGCtrl 5.4]
+type = anim
+time = 3350
+value = 10
+
+[BGCtrldef 6]
+CtrlID = 6
+
+[BGCtrl 6.1]
+type = anim
+time = 0
+value = 11
+
+[BGCtrl 6.2]
+type = anim
+time = 2727
+value = 12
+
+[BGCtrl 6.3]
+type = anim
+time = 2967
+value = 13
+
+[BGCtrl 6.4]
+type = anim
+time = 3350
+value = 14
+
+[BGCtrldef 7]
+CtrlID = 7
+
+[BGCtrl 7.1]
+type = anim
+time = 0
+value = 15
+
+[BGCtrl 7.2]
+type = anim
+time = 2727
+value = 16
+
+[BGCtrl 7.3]
+type = anim
+time = 2967
+value = 17
+
+[BGCtrl 7.4]
+type = anim
+time = 3350
+value = 18

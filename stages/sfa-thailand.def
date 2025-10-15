@@ -1,0 +1,182 @@
+﻿[Info]
+name = "SFA Thailand - Sagat Stage"
+author = "cldz"
+;-------------------------------------------------------
+;sprites ripped from "sfa2"
+;------------------------------------------------------------------------------------------------------------------------
+;thank you list;CAPCOM
+;               nebula-2.25b
+;               Elecbyte[M.U.G.E.N]
+;               VirtuallTek[Fighter Factory 3]
+;               you ;) 
+;------------------------------------------------------------------------------------------------------------------------
+[Camera]
+startx = 0
+starty = 0
+boundleft = -224
+boundright = 224
+boundhigh = -10
+boundlow = 0
+verticalfollow = .85
+tension = 96
+floortension = 64
+overdrawhigh = 120
+overdrawlow = 120
+cuthigh = 0
+cutlow = 0
+tensionhigh = 176
+tensionlow = 64
+;---------------------------------------------------
+;---------------------------------------------------
+[PlayerInfo]
+p1startx = -64
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 64
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -10000
+rightbound =  10000
+topbound  =  0
+botbound  =  0
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 25
+screenright = 25
+
+[StageInfo]
+zoffset = 205;215
+autoturn = 1
+resetBG = 0
+;--------------------------------------------------------
+[Shadow]
+intensity = 60
+color = 0,0,0
+yscale = 0.25
+fade.range = -400,-100
+
+[Music]
+bgmusic = sound/SFA Thailand - Sagat Theme.mp3
+bgvolume = 255
+bgmloopstart = 214833
+bgmloopend = -1
+
+[BGdef]
+spr = sfa-thailand.sff
+debugbg = 0
+;----------------------0'09.734
+
+
+;----------------------
+[BG fill]
+type  = normal
+spriteno = 5,5
+tile = 1,1
+tilespacing = 0, 0
+window = -319,-239,319,239
+windowdelta = 0,0
+;----------------------
+[BG b];414
+type  = normal
+spriteno = 5,0
+start = 0,230
+delta = 0.2098214285714286‬
+mask = 1
+;----------------------
+[BG bud];441
+type  = normal
+spriteno = 2,0
+start = 0,230
+delta = 0.2678571428571429
+mask = 1
+;------
+[BG floor];40,32
+type  = parallax
+spriteno = 1,30
+start = 0,230
+mask = 1
+delta= .27,1
+xscale =1,7.083333333333333
+[BG floor];40,32
+type  = parallax
+spriteno = 1,20
+start = 0,230
+mask = 1
+delta= .27,1
+xscale =1,7.083333333333333
+[BG floor];40,32
+type  = parallax
+spriteno = 1,1
+start = 0,230
+mask = 1
+delta= .27,1
+xscale =1,7.083333333333333
+
+;------0.0228125‬
+[BG 2.6];2
+type  = normal
+spriteno = 4,6
+start = 0,230
+delta = 0.315625
+mask = 1
+[BG 2.5];3
+type  = normal
+spriteno = 4,5
+start = 0,230
+delta = 0.3384375
+mask = 1
+
+[BG 2.4];5
+type  = normal
+spriteno = 4,4
+start = 0,230
+delta = 0.3840625‬
+mask = 1
+[BG 2.3];6
+type  = normal
+spriteno = 4,3
+start = 0,230
+delta = 0.406875
+mask = 1
+
+[BG 2.2];11
+type  = normal
+spriteno = 4,2
+start = 0,230
+delta = 0.5209375
+mask = 1
+[BG 2.1];10
+type  = normal
+spriteno = 4,1
+start = 0,230
+delta = 0.498125
+mask = 1
+;------0.0228125‬
+[BG 1.0];8
+type  = normal
+spriteno = 3,0
+start = 0,230
+delta = 0.4525
+mask = 1
+[BG 1.1];20
+type  = normal
+spriteno = 3,1
+start = 0,230
+delta = 0.72625
+mask = 1
+[BG 1.2];19
+type  = normal
+spriteno = 3,2
+start = 0,230
+delta = 0.7034375
+mask = 1

@@ -1,0 +1,64 @@
+[Info]
+name = SFA Suzaku Castle (Dusk) - Ryu Stage
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -191
+boundright = 165
+boundhigh = 0
+boundlow = 0
+verticalfollow = .3
+tension = 50
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0
+botbound  =  0
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset = 220
+autoturn = 1
+resetBG = 1
+
+[Shadow]
+yscale = 1
+reflect = 0
+
+[Music]
+bgmusic = sound/SFA Suzaku Castle (Dusk) - Evil Ryu Theme.mp3
+bgvolume = 0
+
+[BGdef]
+spr = sfa-suzaku castle (dusk).sff
+
+
+
+[BG back]
+type = normal
+spriteno = 0,0
+layerno = 0
+start = -351, 17
+delta = 1,0
+mask = 0
